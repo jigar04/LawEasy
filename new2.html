@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Form</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>examination system</h1>
+<br />
+<h4 style="line-height:30px;">ganpat university</h4><br />
+
+<form action="insert.php" method="POST">
+  <div class="container">
+<select name="category" id="category" class="select-form" required>
+<option value=''>Sem</option>
+<option value="37">1</option>
+<option value="136">2</option>
+<option value="139">3</option>
+<option value="38">4</option>
+<option value="133">5</option>
+<option value="138">6</option>
+<option value="39">7</option>
+    <option value="39">8</option>
+</select>
+</div>
+<div class="container">
+	<label for="subject">subject</label>
+    <select name="subject" class="select-form" id="subject" required>
+			<option value="">Subject</option>
+			<option>wt</option>
+			<option>p&s</option>
+			<option>os</option>	
+			<option>AC</option>
+			</select>
+</div>
+<div class="container">
+<input style="margin-bottom:0px;" class="input-text form-control" name="subject" id="subject" maxlength="70" type="text" placeholder="Time" value="" required>
+<div id="subjecttext" style="color:red;"></div>
+</div>
+<div class="container">
+<input class="input-text form-control" name="name" id="name" maxlength="50" type="text" placeholder="DATE" value="" required>
+<div id="Div1"></div>
+</div>
+<input type="submit" name="submit" value="Submit" class="button button-primary">
+</body>
+</html>
